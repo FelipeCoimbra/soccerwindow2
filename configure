@@ -4540,7 +4540,7 @@ fi
   QT4_CXXFLAGS="$QT4_CFLAGS"
   QT4_CPPFLAGS=""
   QT4_LDFLAGS=$($PKG_CONFIG --static --libs-only-L $QT4_REQUIRED_MODULES)
-  QT4_LDADD="$($PKG_CONFIG --static --libs-only-other $QT4_REQUIRED_MODULES)$($PKG_CONFIG --static --libs-only-l $QT4_REQUIRED_MODULES)"
+  QT4_LDADD="$($PKG_CONFIG --static --libs-only-other $QT4_REQUIRED_MODULES) $($PKG_CONFIG --static --libs-only-l $QT4_REQUIRED_MODULES)"
   { $as_echo "$as_me:${as_lineno-$LINENO}: set QT4_CXXFLAGS... $QT4_CXXFLAGS" >&5
 $as_echo "$as_me: set QT4_CXXFLAGS... $QT4_CXXFLAGS" >&6;}
   { $as_echo "$as_me:${as_lineno-$LINENO}: set QT4_LDFLAGS... $QT4_LDFLAGS" >&5
